@@ -320,9 +320,13 @@ navbar{
 #name{
     font-size:2rem;
     text-align:center;
+
 }
 
-#name img{
+.dev{
+    margin-top:5rem;
+    width:10rem;
+    height:10rem;
     animation-name:main;
     animation-duration:2s;
     animation-delay:0s;
@@ -781,6 +785,36 @@ navbar{
     }
 }
 
+                                                /* Contact Me */
 
-                                                           /* Contact Me */
+#Contact{
+    width:100%;
+    height:50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#Contact_Div{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color: black;
+    color:white;
+    width:40%;
+    height:70%;
+    border-radius:10px;
+}
+
+input{
+    width:16rem;
+    height:8rem;
+}
+
+@media (min-width:408px) and (max-width:1080px){
+    #Contact_Div{
+        width:90%;
+    }
+}
