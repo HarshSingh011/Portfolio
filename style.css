@@ -19,17 +19,17 @@ navbar{
 }
 
 #navbar{
-    height:3rem;
+    height:4rem;
     display:flex;
     justify-content: center;
     background: linear-gradient(115deg, #175fab, #3be06d);
 }
 
 #navbar ul {
-    width:20rem;
+    width:26rem;
     display:flex;
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin:auto;
     gap:2rem;
 }
@@ -101,6 +101,30 @@ navbar{
     animation-name:head;
     animation-duration:3s;
     animation-iteration-count: 1;
+}
+
+.blink{
+    animation-name:blink;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0%{
+        opacity:0;
+    }
+    25%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+    75%{
+        opacity:1;
+    }
+    199%{
+        opacity:0;
+    }
 }
 
 @keyframes head{
@@ -239,6 +263,17 @@ navbar{
     gap:2rem;
 }
 
+#Skill{
+    width:100%;
+    height:100vh;
+    background-color: #0E1D35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+}
+
 #Skill_Stack{
     border:8px solid #63c5da;
     width:63rem;
@@ -264,28 +299,182 @@ navbar{
     font-size:1.12rem;
 }
 
+#Teck_Stack{
+    border:8px solid #63c5da;
+    width:30rem;
+    height:50vh;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* display:inline-block; */
+    color:black;
+    box-shadow: 18px 18px 9px rgba(0, 0, 0, 0.3);
+    border-radius:18px;
+    padding:3rem;
+    color:#DDDEE5;
+}
+
+#Stack1{
+    display:flex;
+    flex-direction: row;
+}
+
+#Stack2{
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    right:20rem;
+    top:3rem;
+}
+
+#Stack3{
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    right:28rem;
+    top:8rem;
+}
+
+#tech1{
+    width:7rem;
+    height:7rem;
+}
+
+#tech2{
+    width:9rem;
+    height:7rem;
+}
+
+#tech3{
+    width:12rem;
+    height:8rem;
+}
+
+#tech4{
+    width:4rem;
+    height:4rem;
+}
+
+#tech5{
+    width:4rem;
+    height:4rem;
+}
+
+#tech6{
+    width:4rem;
+    height:4rem;
+}
+
+#tech7{
+    width:4rem;
+    height:4rem;
+}
+
+
 @media (min-width:208px) and (max-width:1200px){
+    main{
+        height:140vh;
+    }
+    #hero{
+        position:relative;
+        top:8rem;
+    }
+    #name{
+        margin-left:1.5rem;
+        margin-right:1.5rem;
+    }
     #info{
-        height:130vh;
+        height:170vh;
     }
     #Education{
-        width:27rem;
+        width:90%;
         height:15rem;
-        margin-top: 10rem;
         margin-left: 2rem;
         margin-right: 2rem;
     }
+    #Skill{
+        height:130vh;
+    }
     #Skill_Stack{
-        width:27rem;
-        height:15rem;
+        width:90%;
+        height:18rem;
+        margin-top:2rem;
         margin-left: 2rem;
         margin-right: 2rem;
+        padding: 1rem;
+    }
+    #Teck_Stack{
+        width:90%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    #tech1{
+        width:7rem;
+        height:7rem;
+        position:relative;
+        top:-2rem;
+    }
+    
+    #tech2{
+        width:9rem;
+        height:7rem;
+        position:relative;
+        top:-2rem;
+    }
+    
+    #tech3{
+        width:12rem;
+        height:8rem;
+        position:relative;
+        top:-2rem;
+        right:4rem;
+    }
+    
+    #tech4{
+        width:4rem;
+        height:4rem;
+        position:relative;
+        right:2rem;
+        top:-1rem;
+    }
+    
+    #tech5{
+        width:4rem;
+        height:4rem;
+        position:relative;
+        right:2rem;
+        top:-1rem;
+    }
+    
+    #tech6{
+        width:4rem;
+        height:4rem;
+        top:-2rem;
+        right:2rem;
+    }
+    
+    #tech7{
+        width:4rem;
+        height:4rem;
+        top:-3rem;
+    }
+    #Teck_Stack{
+        width:27rem;
+        height:60vh;
+        margin:auto;
     }
 }
 
+
+
                                                     /* Projects */
 #Pro{
-    background-color: #0E1D35;
+    background-color:#DDDEE5;
     height:100vh;
     width:100%;
     display:flex;
@@ -363,8 +552,11 @@ navbar{
         height:180vh;
         margin-bottom:2rem;
     }
-    #Projects:hover {
-        transform:scale(1);
+    .Pr{
+        width:90%;
+    }
+    .Pr:hover {
+        scale:1;
     }
 }
 
@@ -406,7 +598,7 @@ navbar{
 #ct_Form{
     width:40rem;
     height:22rem;
-    border:2px solid white;
+    /* border:2px solid white; */
     display:flex;
     justify-content: center;
     align-items: center;
@@ -435,7 +627,7 @@ navbar{
 #ct_icon{
     width:20rem;
     height:5rem;
-    border:2px solid white;
+    /* border:2px solid white; */
     padding:2rem;
     display:flex;
     justify-content: center;
@@ -443,10 +635,18 @@ navbar{
     flex-direction: row;
 }
 
+.fa-github{
+    /* background-color:red; */
+    height:2rem;
+    width:2rem;
+}
 
 
 @media (min-width:208px) and (max-width:1200px){
-    #Contact_Div{
+    /* #Contact_Div{
+        
+    } */
+    #ct_detail{
         width:90%;
     }
 }

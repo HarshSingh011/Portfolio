@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react-is/18.3.1/cjs/react-is.production.min.js" integrity="sha512-iDRIWa3iFYlSq6u120ox1wbt3AlVinbgn30ZvQnuxWTe+I8fFLwa/uekb5U64TGvsK2t8V844rQRCIFORFBNiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-is/18.3.0-next-e7c5af45c-20221023/cjs/react-is.production.min.js" integrity="sha512-g73o5iPiWCD6xqoT0dpf1ELAKDlCEOK//3LA185cbaAJoZxb5+sw1yKLrEm1QSduGQYUnIN7qTc2GotrtQ7sUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -13,17 +15,17 @@
                 <ul>
                     <a href="#"><li id="navb1" ><b>Home</b></li></a>
                     <a href="#info"><li id="navb2" ><b>Education</b></li></a>
-                    <a href="#"><li id="navb2" ><b>Skill</b></li></a>
+                    <a href="#Skill"><li id="navb2" ><b>Skill</b></li></a>
                     <a href="#Pro"><li id="navb4" ><b>Projects</b></li></a>
                     <a href="#Contact"><li id="navb5" ><b>Contact</b></li></a>
                 </ul>
             </div>
         </navbar>
-        <div>
+        <div id="hero">
             <div id="introduction">
                 <div id="name">
                     <img class="dev" src="./views/dev.png">
-                    <h1>Hi I'm Harsh Singh</h1>
+                    <div class="blink"><h1>Hi I'm Harsh Singh</h1></div>
                     <p>
                         I am an Average person who is trying to improve his skill so that I can become a better person<br>
                         who can take responsiblilty of the things that are around him and take care of his family and friends.<br>
@@ -35,6 +37,7 @@
 
     <section id="info">
         <div id ="info-div">
+            <i class="fa-brands fa-github"></i>
             <div id="Education">
                 <div class="Edu">
                     <h3><strong>GRADE 10</strong></h3>
@@ -58,7 +61,7 @@
         </div>
     </section>
 
-    <section id="Pro">
+    <section id = "Skill">
         <div id="Skill_Stack">
             <h2> Skill Set are :-</h2>
             <ul id="skill_list">
@@ -69,23 +72,42 @@
                 <li>Currently Learing MERN</li>
             </ul>
         </div>
+        <div id="Teck_Stack">
+            <div id="Stack1">
+                <img class="stack" id="tech1" src="./views/HTML.png">
+                <img class="stack" id="tech2" src="./views/CSS.png">
+                <img class="stack" id="tech3" src="./views/JS.png">
+            </div>
+            <div id="Stack2">
+                <img class="stack" id="tech4" src="./views/C.png">
+                <img class="stack" id="tech5" src="./views/C++.png">
+            </div>
+            <div id="Stack3">
+                <img class="stack" id="tech6" src="./views/Github.jpeg">
+                <img class="stack" id="tech7" src="./views/node.jpeg">
+            </div>
+           
+        </div>
+    </section>
+
+    <section id="Pro">
         <div id="Projects">
             <div class="Pr" id="Project1">
                 <h2>Sprite-Game</h2>
                 <img src="./views/Project1.png">
-                <a href="">Check Out</a>
+                <a href="https://harshsingh011.github.io/Spirit-Game/">Check Out</a>
                 <p>It is game in which it pridict the spirit animal and it's nature of your soul.</p>
             </div>
             <div class="Pr" id="Project2">
                 <h2>Pokemon-Game</h2>
                 <img src="./views/Project2.png">
-                <a href="">Check Out</a>
+                <a href="https://harshsingh011.github.io/Pokemon_Game/">Check Out</a>
                 <p>It is game in which you will have to guess the Pokemo by typing correctly specifing its name</p>
             </div>
             <div class="Pr" id="Project3">
                 <h2>Farm-Game</h2>
                 <img src="./views/Project3.png"> 
-                <a href="">Check Out</a>
+                <a href="https://harshsingh011.github.io/Farm_Game/">Check Out</a>
                 <p>It game inspired by plant vs Zombies but it is not fully completed Project yet.</p>
             </div>
         </div>
@@ -94,13 +116,13 @@
     <section id="Contact">
             <div id="Contact_Div">
                 <div id="ct_detail">
-                    <h3>Mobile No: 6393XXXXXXX</h3>
+                    <h3><span style="color:#9BEC00">Mobile No:</span> 6393XXXXXXX</h3>
                     <br>
-                    <h3>Email: XXXXXXX.@gmail.com</h3>
+                    <h3><span style="color:#9BEC00">Email:</span> XXXXXXX.@gmail.com</h3>
                     <br>
                 </div>
                 <div id="ct_Form">
-                    <h1>Let's Build a Connect</h1>
+                    <h1 style="color:#9BEC00">Let's Build a Connection</h1>
                     <br>
                     <textarea id="text1" rows="1" column="4" placeholder="Enter you Name"></textarea>
                     <br>
@@ -109,7 +131,8 @@
                     <textarea id="text3" rows="3" column="4" placeholder="Message"></textarea>
                 </div>
                 <div id="ct_icon">
-                    <h3>LeetCode: <a href="https://leetcode.com/u/harshroot12/">LeetCode Link</a></h3>
+                    <a href="https://leetcode.com/u/harshroot12/"></i></a>
+                    <i class="fab fa-github" style="color: #a4ccea;"></i>
                     <h3>GitHub: <a href="https://github.com/HarshSingh011">Github Link</a></h3>
                 </div>
             </div>
