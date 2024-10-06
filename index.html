@@ -7,100 +7,112 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="circle1"></div>
-    <div class="rod1"></div>
-    <div class="circle2"></div>
-    <div class="rod2"></div>
-    <div class="circle3"></div>
-    <div class="rod3"></div>
-    <img class="dot" id="dot1" src="./views/dot.png" >
-    <navbar>
-        <div id="navbar">
-            <ul>
-                <a href="#"><li id="navb1" ><b>Home</b></li></a>
-                <a href="#info"><li id="navb2" ><b>Edu & Skill</b></li></a>
-                <a href="#Pro"><li id="navb4" ><b>Projects</b></li></a>
-                <a href="#Contact"><li id="navb5" ><b>Contact</b></li></a>
-            </ul>
-        </div>
-    </navbar>
-
-    <!-- <div class="dot2"><img class="dot" id="dot2" src="./views/dot.png"></div> -->
-    <img class="dot" id="dot2" src="./views/dot.png">
-    <img class="dot" id="dot3" src="./views/dot.png">
-    <div id="square1"></div>
-    <div id="square2"></div>
-    <div id="square3"></div>
-    <div id="circle4"></div>
-    <div id="circle5"></div>
-    <div id="circle6"></div>
-    
-    <section>
-        <div id="introduction">
-            <div id="name">
-                <img class="dev" src="./views/dev.png">
-                <h1>Hi I'm Harsh Singh</h1>
-                <p>I will allways go for perfection not for results.</p>
+    <main>
+        <navbar>
+            <div id="navbar">
+                <ul>
+                    <a href="#"><li id="navb1" ><b>Home</b></li></a>
+                    <a href="#info"><li id="navb2" ><b>Education</b></li></a>
+                    <a href="#"><li id="navb2" ><b>Skill</b></li></a>
+                    <a href="#Pro"><li id="navb4" ><b>Projects</b></li></a>
+                    <a href="#Contact"><li id="navb5" ><b>Contact</b></li></a>
+                </ul>
+            </div>
+        </navbar>
+        <div>
+            <div id="introduction">
+                <div id="name">
+                    <img class="dev" src="./views/dev.png">
+                    <h1>Hi I'm Harsh Singh</h1>
+                    <p>
+                        I am an Average person who is trying to improve his skill so that I can become a better person<br>
+                        who can take responsiblilty of the things that are around him and take care of his family and friends.<br>
+                    </p>
+                </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <section id="info">
         <div id ="info-div">
             <div id="Education">
-                <h2>Education</h2>
-                <p>
-                    I have done my class 10 from Army Public school Lucknow where I scored 79.4%. I have done my class 12 
-                    from that same school and I have scored 90% in it and now I am currently persuing B-tech from 
-                    Ajay Kumar Garg Engineering College Ghaziabad.
-                </p>
-            </div>
-            <div id="Skill_Stack">
-                <h2> Skill Set are :-</h2> 
-                <br>
-                <ul id="skill_list">
-                    <li><b>HTML</b> : I have a good hold on my html concepts by making some small projects on it.</li>
-                    <li><b>CSS</b> : My CSS concepts are good but my Designing is not that good.</li>
-                    <li><b>JS</b> : My js concepts up to the mark as thing cause I have some project using it.</li>
-                    <li><b>C and C++</b> : I have just started my programming journey so I can't say much but my basics are clear</li>
-                    <li>Currently Learing MERN</li>
-                </ul>
+                <div class="Edu">
+                    <h3><strong>GRADE 10</strong></h3>
+                    <p><em><b>Schooling : </b></em>Army Public School Lucknow</p>
+                    <p><em><b>Percentage : </b></em>79.4%</p>
+                </div>
+                <div class="Edu">
+                    <h3><strong>GRADE 12</strong></h3>
+                    <p><em><b>Schooling : </b></em>Army Public School Lucknow</p>
+                    <p><em><b>Percentage : </b></em>79.4%</p>
+                    <p><em><b>Achivements : </b></em>Head Cyber Council of School, two months of work exprience under Research Scholar</p>
+                </div>
+                <div class="Edu">
+                    <h3><strong>COLLEGE</strong></h3>
+                    <p><em><b>Course : </b</em>BTech</p>
+                    <p><em><b>Work Experence : </b></em>Currently working in NGO named SSF as a maths tutor for slum children</p>
+                    <p><em><b>Achivements :- </b></em><br>Third rank in Debate competeion, Third rank in competetion held by Orja clud where we
+                    made a heart beat sensor and currently working in team for SIH</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="Pro">
+        <div id="Skill_Stack">
+            <h2> Skill Set are :-</h2>
+            <ul id="skill_list">
+                <li><b>HTML</b> : I have a good hold on my html concepts by making some small projects on it.</li>
+                <li><b>CSS</b> : My CSS concepts are good but my Designing is not that good.</li>
+                <li><b>JS</b> : My js concepts up to the mark as thing cause I have some project using it.</li>
+                <li><b>C and C++</b> : I have just started my programming journey so I can't say much but my basics are clear</li>
+                <li>Currently Learing MERN</li>
+            </ul>
+        </div>
         <div id="Projects">
-            <div id="Project1">
+            <div class="Pr" id="Project1">
                 <h2>Sprite-Game</h2>
                 <img src="./views/Project1.png">
+                <a href="">Check Out</a>
                 <p>It is game in which it pridict the spirit animal and it's nature of your soul.</p>
             </div>
-            <div id="Project2">
+            <div class="Pr" id="Project2">
                 <h2>Pokemon-Game</h2>
                 <img src="./views/Project2.png">
+                <a href="">Check Out</a>
                 <p>It is game in which you will have to guess the Pokemo by typing correctly specifing its name</p>
             </div>
-            <div id="Project3">
+            <div class="Pr" id="Project3">
                 <h2>Farm-Game</h2>
                 <img src="./views/Project3.png"> 
+                <a href="">Check Out</a>
                 <p>It game inspired by plant vs Zombies but it is not fully completed Project yet.</p>
             </div>
         </div>
     </section>
 
-    <section>
-        <div id="Contact">
+    <section id="Contact">
             <div id="Contact_Div">
-                <h2>For further information you can contact Me!!.</h2>
-                <h3>Mobile No: 6393XXXXXXX</h3>
-                <h3>Email: XXXXXXX.@gmail.com</h3>
-                <h3>LeetCode: <a href="https://leetcode.com/u/harshroot12/">LeetCode Link</a></h3>
-                <h3>GitHub: <a href="https://github.com/HarshSingh011">Github Link</a></h3>
-                <h3>Any Suggestions</h3>
-                <input type="text">
+                <div id="ct_detail">
+                    <h3>Mobile No: 6393XXXXXXX</h3>
+                    <br>
+                    <h3>Email: XXXXXXX.@gmail.com</h3>
+                    <br>
+                </div>
+                <div id="ct_Form">
+                    <h1>Let's Build a Connect</h1>
+                    <br>
+                    <textarea id="text1" rows="1" column="4" placeholder="Enter you Name"></textarea>
+                    <br>
+                    <textarea id="text2" rows="1" column="4" placeholder="Enter your Email"></textarea>
+                    <br>
+                    <textarea id="text3" rows="3" column="4" placeholder="Message"></textarea>
+                </div>
+                <div id="ct_icon">
+                    <h3>LeetCode: <a href="https://leetcode.com/u/harshroot12/">LeetCode Link</a></h3>
+                    <h3>GitHub: <a href="https://github.com/HarshSingh011">Github Link</a></h3>
+                </div>
             </div>
-        </div>
     </section> 
 </body>
 </html>
